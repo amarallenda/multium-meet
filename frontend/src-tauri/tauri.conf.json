@@ -1,8 +1,8 @@
 {
     "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-    "productName": "meetily",
+    "productName": "Multium Meet",
     "version": "0.4.0",
-    "identifier": "com.meetily.ai",
+    "identifier": "com.multium.meet",
     "build": {
         "frontendDist": "../out",
         "devUrl": "http://localhost:3118",
@@ -12,7 +12,7 @@
     "app": {
         "windows": [
             {
-                "title": "meetily",
+                "title": "multium-meet",
                 "width": 1100,
                 "height": 700,
                 "resizable": true,
@@ -37,7 +37,7 @@
             },
             "capabilities": [
                 {
-                    "identifier": "main",
+                    "identifier": "com.multium.meet",
                     "description": "Main window capability with file system and media access",
                     "windows": [
                         "main"
@@ -66,7 +66,7 @@
                         "updater:default",
                         "process:default",
                         {
-                            "identifier": "fs:scope",
+                            "identifier": "com.multium.meet",
                             "allow": [
                                 {
                                     "path": "$APPDATA/*"
